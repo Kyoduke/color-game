@@ -1,27 +1,126 @@
+body {
+    background-color: #232323;
+    margin: 0;
+  }
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas:
+        "a b c"
+        "d e f";
+
     height: 300px;
     grid-row-gap: 1em;
-    grid-column-gap: 1em;
+    /* grid-column-gap: 1em; */
+    padding: 5px;
 }
 .gamemode {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-h1 {
     text-align: center;
+    font-size: 25px;
+    /* color: steelblue; */
+    background: aliceblue;
+    /* display: grid; */
+    /* grid-template-areas: "a a1 b c ";
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* cursor: pointer; */
+    /* grid-template-rows: 40px; */
+}
+h1, h2 {
+    background: steelblue;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    cursor: default;
+    font-weight: normal;
 }
 
 h2 {
+    font-size: 60px;
+    margin: 0;
     text-align: center;
+    color: aliceblue;
+    cursor: default;
+    font-weight: normal;
 }
 
-h3 {
-    text-align: center;
+button {
+    /* text-align: center; */
+    border: none;
+    background: none;
+    height: 100%;
+    /* padding: 1em; */
+    text-transform: uppercase;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+}
+
+button:hover {
+    background-color: steelblue;
+    color: aliceblue;
+    transition-duration: 0.4s;
+}
+
+button:not(:hover) {
+    transition-duration: 0.6s;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#ezBtn {
+    grid-area: b;
+    align-self: center;
+}
+
+#mudar {
+    grid-area: a;
+    align-self: center;
+}
+
+#hardBtn {
+    grid-area: c;
+    align-self: center;
 }
 
 .buttons {
     background: grey;
+    border-radius: 25px;
+    width: 200px;
+    transition: all 0.5s;
+    
+}
+
+.but1 {
+    grid-area: a;
+    justify-self: end;
+}
+
+.but2 {
+    grid-area: b;
+    justify-self: center;
+}
+
+.but3 {
+    grid-area: c;
+}
+
+.but4 {
+    grid-area: d;
+    justify-self: end;
+} 
+
+.but5 {
+    grid-area: e;
+    justify-self: center;
+}
+
+.but6 {
+    grid-area: f;
 }
