@@ -1,0 +1,27 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+}
+.gamemode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.buttons {
+    background: grey;
+}
